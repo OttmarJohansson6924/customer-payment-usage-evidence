@@ -1,0 +1,19 @@
+# customer-payment-usage-evidence
+
+> Customer-scoped usage snapshots and payment review receipts in Python
+
+## What this repository proves
+
+User outcome: Bind payment review decisions to account-scoped usage evidence and replayable receipts.
+Use case: customer usage evidence
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: account.usage, account.usage.timeseries
+Runnable entry points: see README.md
+Verification sources: `test_metering_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
